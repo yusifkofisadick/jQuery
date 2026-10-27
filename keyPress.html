@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key press</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>key press</h1>
+    </header>
+
+    <h2>Hello</h2>
+
+    <button class="redBtn">red</button>
+    <button class="yellowBtn">Yellow</button>
+    <button class="greenBtn">Green</button>
+    <button class="blueBtn">Blue</button>
+
+
+
+
+    <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <!-- javascript here  -->
+     <script src="index.js" charset="utf-8">
+
+        // adding a keydown event listener to the document that changes the text of the h2 element to the key that was pressed.
+
+$(document).keydown(function(event){
+    $("h2").text(event.key)
+}) 
+     </script>
+</body>
+</html>
